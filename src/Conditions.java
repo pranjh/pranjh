@@ -1,14 +1,19 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Conditions {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int age = sc.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        if(age > 18) {
-            System.out.println("Adult");
-        } else {
-            System.out.println("Not Adult");
+        if (a==b){
+            System.out.println("Equal");
+        }else {
+            if(a>b){
+                System.out.println("a is Greater");
+            }else {
+                System.out.println("a is Lesser");
+            }
         }
     }
 }
